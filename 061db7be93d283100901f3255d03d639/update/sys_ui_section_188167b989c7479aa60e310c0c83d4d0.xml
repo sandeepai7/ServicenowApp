@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_ui_section caption="General" section_id="188167b989c7479aa60e310c0c83d4d0" sys_domain="global" table="x_1970512_softwa_0_allocation" view="">
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.begin_split</element>
+      <position>0</position>
+      <sys_id>7bc81354846e4e388e9bf6bbcb34477f</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type>.begin_split</type>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>number</element>
+      <position>1</position>
+      <sys_id>783a8494bcf1470a8181337f6617ed54</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>entitlement</element>
+      <position>2</position>
+      <sys_id>133004071ebf4d168accfe1514685504</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>assigned_to_user</element>
+      <position>3</position>
+      <sys_id>edb3b61e3adb4e649ce5aac0ec50e7d3</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.split</element>
+      <position>4</position>
+      <sys_id>ff5e798b38534977851705a4f4cf8922</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type>.split</type>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>assigned_to_device</element>
+      <position>5</position>
+      <sys_id>97d8efa33011481ab528b819136c481f</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>allocated_date</element>
+      <position>6</position>
+      <sys_id>594417ef61d14e599abf2a1523766b78</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>status</element>
+      <position>7</position>
+      <sys_id>c06d7c3315694e85a884fbaa417be655</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.end_split</element>
+      <position>8</position>
+      <sys_id>5c92b1ee7d9f4398bdef5574391b98d2</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_allocation" sys_domain="global" view="Default view">188167b989c7479aa60e310c0c83d4d0</sys_ui_section>
+      <sys_user/>
+      <type>.end_split</type>
+    </sys_ui_element>
+    <sys_ui_section action="INSERT_OR_UPDATE">
+      <caption>General</caption>
+      <header>false</header>
+      <name>x_1970512_softwa_0_allocation</name>
+      <roles/>
+      <sys_domain>global</sys_domain>
+      <sys_id>188167b989c7479aa60e310c0c83d4d0</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <sys_user/>
+      <title>false</title>
+      <view_name/>
+      <view display_value="Default view" name="NULL">Default view</view>
+    </sys_ui_section>
+  </sys_ui_section>
+</record_update>

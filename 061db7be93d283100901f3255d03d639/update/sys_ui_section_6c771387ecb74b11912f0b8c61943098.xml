@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_ui_section caption="General" section_id="6c771387ecb74b11912f0b8c61943098" sys_domain="global" table="x_1970512_softwa_0_installation" view="">
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.begin_split</element>
+      <position>0</position>
+      <sys_id>8cef5a42680a4db48a656cdf0282e49b</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type>.begin_split</type>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>number</element>
+      <position>1</position>
+      <sys_id>078d20db018d4430a73a514dd75e0cd9</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>discovered_publisher</element>
+      <position>2</position>
+      <sys_id>fc167559efd1412da41a1b80829e9a1f</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>discovered_product</element>
+      <position>3</position>
+      <sys_id>d7abb2d2a57d492e9918b6fa6063f913</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>installed_on_device</element>
+      <position>4</position>
+      <sys_id>c8edde52f65946a9b5964b9cede9ff29</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.split</element>
+      <position>5</position>
+      <sys_id>56cc593bd9104f458c3f0bdd2cc52191</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type>.split</type>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>installed_for_user</element>
+      <position>6</position>
+      <sys_id>def18647a90242478bf270784b834110</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>normalization_status</element>
+      <position>7</position>
+      <sys_id>f230b7e1cccc4205b2e3282f99c1a722</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>normalized_product</element>
+      <position>8</position>
+      <sys_id>78f57cd41ada4687a0e07c3b2c292a85</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>discovery_source</element>
+      <position>9</position>
+      <sys_id>4898218926264c8d8ee1eb89d470881c</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.end_split</element>
+      <position>10</position>
+      <sys_id>c72c8340a3d14b64b1edc5e53b552b8f</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+      <sys_user/>
+      <type>.end_split</type>
+    </sys_ui_element>
+    <sys_ui_section action="INSERT_OR_UPDATE">
+      <caption>General</caption>
+      <header>false</header>
+      <name>x_1970512_softwa_0_installation</name>
+      <roles/>
+      <sys_domain>global</sys_domain>
+      <sys_id>6c771387ecb74b11912f0b8c61943098</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <sys_user/>
+      <title>false</title>
+      <view_name/>
+      <view display_value="Default view" name="NULL">Default view</view>
+    </sys_ui_section>
+  </sys_ui_section>
+</record_update>

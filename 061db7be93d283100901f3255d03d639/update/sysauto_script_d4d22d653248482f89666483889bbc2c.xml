@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+  <sysauto_script action="INSERT_OR_UPDATE">
+    <sys_id>d4d22d653248482f89666483889bbc2c</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sysauto_script_d4d22d653248482f89666483889bbc2c</sys_update_name>
+    <active>true</active>
+    <advanced>false</advanced>
+    <business_calendar/>
+    <condition/>
+    <conditional>false</conditional>
+    <entered_run_end/>
+    <entered_run_start/>
+    <entered_time>1970-01-01 02:00:00</entered_time>
+    <max_drift/>
+    <name>Weekly License Reclamation</name>
+    <offset/>
+    <offset_type>0</offset_type>
+    <repeat_every/>
+    <run_as/>
+    <run_as_tz/>
+    <run_dayofmonth>1</run_dayofmonth>
+    <run_dayofweek>1</run_dayofweek>
+    <run_daysofweek>7</run_daysofweek>
+    <run_end/>
+    <run_month>1</run_month>
+    <run_period/>
+    <run_start>2026-07-29 17:15:16</run_start>
+    <run_time>1970-01-01 02:00:00</run_time>
+    <run_type>weekly</run_type>
+    <run_weekinmonth>1</run_weekinmonth>
+    <script><![CDATA[(function() {
+    var INACTIVE_THRESHOLD_DAYS = 90;
+    var flaggedCount = 0;
+    var reclaimedCount = 0;
+
+    gs.info('SAML Reclamation Job: Starting weekly reclamation scan...');
+
+    // Step 1: Calculate days_inactive for all active usage records
+    var usageGr = new GlideRecord('x_1970512_softwa_0_usage');
+    usageGr.addQuery('reclamation_state', 'active');
+    usageGr.addNotNullQuery('last_used_date');
+    usageGr.query();
+
+    while (usageGr.next()) {
+        var lastUsed = new GlideDateTime(usageGr.getValue('last_used_date'));
+        var now = new GlideDateTime();
+        var diff = gs.dateDiff(lastUsed.getDisplayValue(), now.getDisplayValue(), true);
+        var daysInactive = parseInt(diff, 10);
+        
+        usageGr.setValue('days_inactive', daysInactive);
+
+        // Step 2: Flag records inactive >= 90 days
+        if (daysInactive >= INACTIVE_THRESHOLD_DAYS) {
+            usageGr.setValue('reclamation_state', 'flagged_inactive');
+            flaggedCount++;
+        }
+        usageGr.update();
+    }
+
+    // Step 3: Auto-reclaim records that have been in "user_contacted" state for 10+ days
+    // (Simulating the 10-day no-response scenario)
+    var pendingGr = new GlideRecord('x_1970512_softwa_0_usage');
+    pendingGr.addQuery('reclamation_state', 'pending_revocation');
+    pendingGr.query();
+
+    while (pendingGr.next()) {
+        var allocationId = pendingGr.getValue('allocation');
+        
+        // Revoke the allocation
+        if (allocationId) {
+            var allocGr = new GlideRecord('x_1970512_softwa_0_allocation');
+            if (allocGr.get(allocationId)) {
+                var entitlementId = allocGr.getValue('entitlement');
+                allocGr.setValue('status', 'revoked');
+                allocGr.update();
+
+                // Recalculate entitlement available_rights
+                if (entitlementId) {
+                    var entGr = new GlideRecord('x_1970512_softwa_0_entitlement');
+                    if (entGr.get(entitlementId)) {
+                        var purchased = parseInt(entGr.getValue('purchased_rights'), 10) || 0;
+                        var activeAllocs = new GlideAggregate('x_1970512_softwa_0_allocation');
+                        activeAllocs.addQuery('entitlement', entitlementId);
+                        activeAllocs.addQuery('status', 'allocated');
+                        activeAllocs.addAggregate('COUNT');
+                        activeAllocs.query();
+                        var allocatedCount = 0;
+                        if (activeAllocs.next()) {
+                            allocatedCount = parseInt(activeAllocs.getAggregate('COUNT'), 10) || 0;
+                        }
+                        entGr.setValue('allocated_rights', allocatedCount);
+                        entGr.setValue('available_rights', purchased - allocatedCount);
+                        entGr.update();
+                    }
+                }
+            }
+        }
+
+        pendingGr.setValue('reclamation_state', 'reclaimed');
+        pendingGr.update();
+        reclaimedCount++;
+    }
+
+    gs.info('SAML Reclamation Job: Flagged ' + flaggedCount + ' inactive, reclaimed ' + reclaimedCount + ' licenses.');
+})();
+]]></script>
+    <sys_policy/>
+    <time_zone/>
+    <upgrade_safe>false</upgrade_safe>
+  </sysauto_script>
+</record_update>

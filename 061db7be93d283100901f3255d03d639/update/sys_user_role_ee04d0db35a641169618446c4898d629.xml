@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+  <sys_user_role action="INSERT_OR_UPDATE">
+    <sys_id>ee04d0db35a641169618446c4898d629</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sys_user_role_ee04d0db35a641169618446c4898d629</sys_update_name>
+    <assignable_by/>
+    <can_delegate>true</can_delegate>
+    <description>SAM Admin - Full administrative access to all Software Asset Management Lifecycle features including configuration, reconciliation, and reclamation management.</description>
+    <elevated_privilege>false</elevated_privilege>
+    <grantable>true</grantable>
+    <name>x_1970512_softwa_0.admin</name>
+    <scoped_admin>false</scoped_admin>
+    <suffix>admin</suffix>
+  </sys_user_role>
+</record_update>

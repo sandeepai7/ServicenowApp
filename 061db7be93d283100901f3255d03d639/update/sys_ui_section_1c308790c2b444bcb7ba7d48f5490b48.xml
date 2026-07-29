@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_ui_section caption="General" section_id="1c308790c2b444bcb7ba7d48f5490b48" sys_domain="global" table="x_1970512_softwa_0_reconciliation" view="">
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.begin_split</element>
+      <position>0</position>
+      <sys_id>ff30304d885a4a0f92afbe737e857042</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type>.begin_split</type>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>number</element>
+      <position>1</position>
+      <sys_id>0874c4b6a1dd4df5b9ae452a58ea0243</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>product</element>
+      <position>2</position>
+      <sys_id>2f4b7b1260e04452859a447f791d3dc9</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>total_entitlements</element>
+      <position>3</position>
+      <sys_id>8a37c8f3d29f4b528ebe8d7d4f6033f2</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>compliance_status</element>
+      <position>4</position>
+      <sys_id>0e7063596a124b0ebeeda32ce6b143ef</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.split</element>
+      <position>5</position>
+      <sys_id>fa1e7294447a4fc2963e67f6e2b8f6db</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type>.split</type>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>reconciliation_date</element>
+      <position>6</position>
+      <sys_id>b313ada242d54f038efcfe7b95bc5ba2</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>total_installations</element>
+      <position>7</position>
+      <sys_id>503a340412f945e0b0b0c4839eadb2a8</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>financial_exposure</element>
+      <position>8</position>
+      <sys_id>442f67251b554d75b0a64d876c25e7c9</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type/>
+    </sys_ui_element>
+    <sys_ui_element action="INSERT_OR_UPDATE">
+      <element>.end_split</element>
+      <position>9</position>
+      <sys_id>fe1bbaa48c3c49d483affe49ee60c307</sys_id>
+      <sys_ui_formatter/>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_reconciliation" sys_domain="global" view="Default view">1c308790c2b444bcb7ba7d48f5490b48</sys_ui_section>
+      <sys_user/>
+      <type>.end_split</type>
+    </sys_ui_element>
+    <sys_ui_section action="INSERT_OR_UPDATE">
+      <caption>General</caption>
+      <header>false</header>
+      <name>x_1970512_softwa_0_reconciliation</name>
+      <roles/>
+      <sys_domain>global</sys_domain>
+      <sys_id>1c308790c2b444bcb7ba7d48f5490b48</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <sys_user/>
+      <title>false</title>
+      <view_name/>
+      <view display_value="Default view" name="NULL">Default view</view>
+    </sys_ui_section>
+  </sys_ui_section>
+</record_update>

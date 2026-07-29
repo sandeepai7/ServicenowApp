@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+  <sys_number action="INSERT_OR_UPDATE">
+    <sys_id>bfca853e83c74323a858190b8bef63e3</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sys_number_bfca853e83c74323a858190b8bef63e3</sys_update_name>
+    <category>x_1970512_softwa_0_installation</category>
+    <maximum_digits>7</maximum_digits>
+    <number>1000</number>
+    <prefix>INS</prefix>
+  </sys_number>
+</record_update>

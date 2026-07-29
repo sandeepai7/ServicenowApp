@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_ui_form_sections form_id="fc9df968b86648509967db082bc33f76" sys_domain="global" table="x_1970512_softwa_0_purchase_order">
+    <sys_ui_form_section action="INSERT_OR_UPDATE">
+      <position>0</position>
+      <sys_id>57969793cfa24fff9f3424cf8527f5e3</sys_id>
+      <sys_ui_form display_value="x_1970512_softwa_0_purchase_order" name="x_1970512_softwa_0_purchase_order" sys_domain="global" view="Default view">fc9df968b86648509967db082bc33f76</sys_ui_form>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_purchase_order" sys_domain="global" view="Default view">4071c505c3b947e783bffd01a1f08642</sys_ui_section>
+    </sys_ui_form_section>
+    <sys_ui_form action="INSERT_OR_UPDATE">
+      <name>x_1970512_softwa_0_purchase_order</name>
+      <roles/>
+      <sys_id>fc9df968b86648509967db082bc33f76</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <sys_user/>
+      <view display_value="Default view" name="NULL">Default view</view>
+      <view_name/>
+    </sys_ui_form>
+  </sys_ui_form_sections>
+</record_update>

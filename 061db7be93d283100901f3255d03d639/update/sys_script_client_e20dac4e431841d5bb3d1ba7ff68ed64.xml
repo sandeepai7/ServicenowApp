@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_client">
+  <sys_script_client action="INSERT_OR_UPDATE">
+    <sys_id>e20dac4e431841d5bb3d1ba7ff68ed64</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sys_script_client_e20dac4e431841d5bb3d1ba7ff68ed64</sys_update_name>
+    <active>true</active>
+    <applies_extended>false</applies_extended>
+    <description/>
+    <field>entitlement</field>
+    <global>true</global>
+    <isolate_script>false</isolate_script>
+    <messages/>
+    <name>Allocation Form Layout Control</name>
+    <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) return;
+    if (!newValue) {
+        g_form.setDisplay('assigned_to_user', true);
+        g_form.setDisplay('assigned_to_device', true);
+        return;
+    }
+    var ga = new GlideAjax('x_1970512_softwa_0.SAMLUtils');
+    ga.addParam('sysparm_name', 'getLicensingMetric');
+    ga.addParam('sysparm_entitlement_id', newValue);
+    ga.getXMLAnswer(function(answer) {
+        if (answer === 'per_user' || answer === 'per_concurrent_user') {
+            g_form.setDisplay('assigned_to_user', true);
+            g_form.setDisplay('assigned_to_device', false);
+            g_form.setValue('assigned_to_device', '');
+        } else if (answer === 'per_device' || answer === 'per_core') {
+            g_form.setDisplay('assigned_to_user', false);
+            g_form.setDisplay('assigned_to_device', true);
+            g_form.setValue('assigned_to_user', '');
+        } else {
+            g_form.setDisplay('assigned_to_user', true);
+            g_form.setDisplay('assigned_to_device', true);
+        }
+    });
+}
+]]></script>
+    <table>x_1970512_softwa_0_allocation</table>
+    <type>onChange</type>
+    <ui_type>10</ui_type>
+    <view/>
+  </sys_script_client>
+</record_update>

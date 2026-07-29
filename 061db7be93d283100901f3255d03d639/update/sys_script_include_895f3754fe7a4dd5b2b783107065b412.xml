@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <sys_id>895f3754fe7a4dd5b2b783107065b412</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sys_script_include_895f3754fe7a4dd5b2b783107065b412</sys_update_name>
+    <access>public</access>
+    <active>true</active>
+    <api_name>x_1970512_softwa_0.ReconciliationEngine</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description>Compliance reconciliation engine that compares entitlement rights against discovered installations for each product. Generates reconciliation records with compliance status and financial exposure calculations.</description>
+    <mobile_callable>false</mobile_callable>
+    <name>ReconciliationEngine</name>
+    <sandbox_callable>false</sandbox_callable>
+    <script><![CDATA[var ReconciliationEngine = Class.create();
+ReconciliationEngine.prototype = {
+    initialize: function() {},
+
+    runReconciliation: function() {
+        var results = [];
+        var catalog = new GlideRecord('x_1970512_softwa_0_product_catalog');
+        catalog.query();
+
+        while (catalog.next()) {
+            var productId = catalog.getUniqueValue();
+            var productName = catalog.getValue('product_name');
+
+            // Sum total entitlements (purchased_rights) for this product
+            var totalEntitlements = 0;
+            var unitCost = 0;
+            var entGr = new GlideRecord('x_1970512_softwa_0_entitlement');
+            entGr.addQuery('product', productId);
+            entGr.addQuery('state', 'IN', 'active,expiring');
+            entGr.query();
+            while (entGr.next()) {
+                totalEntitlements += parseInt(entGr.getValue('purchased_rights'), 10) || 0;
+                unitCost = parseFloat(entGr.getValue('unit_cost')) || unitCost;
+            }
+
+            // Count total installations for this product
+            var totalInstallations = 0;
+            var insGr = new GlideRecord('x_1970512_softwa_0_installation');
+            insGr.addQuery('normalized_product', productId);
+            insGr.addQuery('normalization_status', 'normalized');
+            insGr.query();
+            totalInstallations = insGr.getRowCount();
+
+            // Determine compliance status
+            var complianceStatus = 'compliant';
+            var financialExposure = 0;
+            if (totalInstallations > totalEntitlements) {
+                complianceStatus = 'under_licensed';
+                financialExposure = (totalInstallations - totalEntitlements) * unitCost;
+            } else if (totalEntitlements > totalInstallations && totalInstallations > 0) {
+                complianceStatus = 'over_licensed';
+            }
+
+            // Create reconciliation record
+            var recGr = new GlideRecord('x_1970512_softwa_0_reconciliation');
+            recGr.initialize();
+            recGr.setValue('product', productId);
+            recGr.setValue('reconciliation_date', new GlideDateTime().getDisplayValue());
+            recGr.setValue('total_entitlements', totalEntitlements);
+            recGr.setValue('total_installations', totalInstallations);
+            recGr.setValue('compliance_status', complianceStatus);
+            recGr.setValue('financial_exposure', financialExposure);
+            recGr.insert();
+
+            results.push({
+                product: productName,
+                entitlements: totalEntitlements,
+                installations: totalInstallations,
+                status: complianceStatus,
+                exposure: financialExposure
+            });
+        }
+
+        gs.info('ReconciliationEngine: Processed ' + results.length + ' products.');
+        return JSON.stringify(results);
+    },
+
+    type: 'ReconciliationEngine'
+};
+]]></script>
+  </sys_script_include>
+</record_update>

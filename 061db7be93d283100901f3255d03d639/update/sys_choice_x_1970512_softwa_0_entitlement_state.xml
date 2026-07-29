@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="state" table="x_1970512_softwa_0_entitlement">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>3046f12c93b445dca759d2c43746d13f</sys_id>
+      <name>x_1970512_softwa_0_entitlement</name>
+      <element>state</element>
+      <label>Draft</label>
+      <value>draft</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>8b222b9e446748f0b8180a459a78f160</sys_id>
+      <name>x_1970512_softwa_0_entitlement</name>
+      <element>state</element>
+      <label>Active</label>
+      <value>active</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>b790e82747394ac5bcb5e07d3872c3a3</sys_id>
+      <name>x_1970512_softwa_0_entitlement</name>
+      <element>state</element>
+      <label>Expiring</label>
+      <value>expiring</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>63e3a27cfaca4eb6ba4b54fa8d9bf7c8</sys_id>
+      <name>x_1970512_softwa_0_entitlement</name>
+      <element>state</element>
+      <label>Expired</label>
+      <value>expired</value>
+      <sequence>3</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>94831a6b9d454be081e69f44013df029</sys_id>
+      <name>x_1970512_softwa_0_entitlement</name>
+      <element>state</element>
+      <label>Retired</label>
+      <value>retired</value>
+      <sequence>4</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>770b6fa2eb6b4eeba2b4e724b57c8b54</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <name>x_1970512_softwa_0_entitlement</name>
+      <element>state</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>

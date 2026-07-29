@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary">
+  <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_1970512_softwa_0_entitlement">
+    <sys_id>0ca8d0d7095d4a07a90afc03be176268</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sys_dictionary_x_1970512_softwa_0_entitlement_null</sys_update_name>
+    <active>true</active>
+    <attributes/>
+    <audit>true</audit>
+    <element/>
+    <internal_type>collection</internal_type>
+    <name>x_1970512_softwa_0_entitlement</name>
+    <read_only>false</read_only>
+    <text_index>false</text_index>
+  </sys_dictionary>
+</record_update>

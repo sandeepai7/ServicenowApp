@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="compliance_status" table="x_1970512_softwa_0_reconciliation">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>4b2afcf949c44dbbb0325ad974139766</sys_id>
+      <name>x_1970512_softwa_0_reconciliation</name>
+      <element>compliance_status</element>
+      <label>Compliant</label>
+      <value>compliant</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>c0e3f4c70b5541d2991e7d1b5afe1af5</sys_id>
+      <name>x_1970512_softwa_0_reconciliation</name>
+      <element>compliance_status</element>
+      <label>Over-licensed</label>
+      <value>over_licensed</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>8f6f4d663bd240f4b3c974985ffbcb4c</sys_id>
+      <name>x_1970512_softwa_0_reconciliation</name>
+      <element>compliance_status</element>
+      <label>Under-licensed/Non-Compliant</label>
+      <value>under_licensed</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>2143ddcf9c4847e7819f6ff1948cde42</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <name>x_1970512_softwa_0_reconciliation</name>
+      <element>compliance_status</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>

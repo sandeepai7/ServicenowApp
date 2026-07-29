@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_ui_form_sections form_id="9660b6bb84fe49fda90d00ab72c26189" sys_domain="global" table="x_1970512_softwa_0_installation">
+    <sys_ui_form_section action="INSERT_OR_UPDATE">
+      <position>0</position>
+      <sys_id>2b3832353c8141298bd55a77d89a6377</sys_id>
+      <sys_ui_form display_value="x_1970512_softwa_0_installation" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">9660b6bb84fe49fda90d00ab72c26189</sys_ui_form>
+      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_installation" sys_domain="global" view="Default view">6c771387ecb74b11912f0b8c61943098</sys_ui_section>
+    </sys_ui_form_section>
+    <sys_ui_form action="INSERT_OR_UPDATE">
+      <name>x_1970512_softwa_0_installation</name>
+      <roles/>
+      <sys_id>9660b6bb84fe49fda90d00ab72c26189</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <sys_user/>
+      <view display_value="Default view" name="NULL">Default view</view>
+      <view_name/>
+    </sys_ui_form>
+  </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <sys_id>004c9e060f494afeb8013be5983ff249</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sys_script_include_004c9e060f494afeb8013be5983ff249</sys_update_name>
+    <access>public</access>
+    <active>true</active>
+    <api_name>x_1970512_softwa_0.NormalizationEngine</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description>Engine that normalizes discovered software installations against the product catalog. Matches discovered products to catalog entries and identifies unlicensed installations.</description>
+    <mobile_callable>false</mobile_callable>
+    <name>NormalizationEngine</name>
+    <sandbox_callable>false</sandbox_callable>
+    <script><![CDATA[var NormalizationEngine = Class.create();
+NormalizationEngine.prototype = {
+    initialize: function() {},
+
+    normalizeInstallation: function(installationGr) {
+        var discoveredProduct = installationGr.getValue('discovered_product') || '';
+        var discoveredPublisher = installationGr.getValue('discovered_publisher') || '';
+        
+        if (!discoveredProduct) {
+            installationGr.setValue('normalization_status', 'match_failed');
+            installationGr.update();
+            return false;
+        }
+
+        var catalog = new GlideRecord('x_1970512_softwa_0_product_catalog');
+        catalog.addQuery('product_name', 'CONTAINS', discoveredProduct);
+        if (discoveredPublisher) {
+            catalog.addQuery('publisher.name', 'CONTAINS', discoveredPublisher);
+        }
+        catalog.setLimit(1);
+        catalog.query();
+
+        if (catalog.next()) {
+            installationGr.setValue('normalization_status', 'normalized');
+            installationGr.setValue('normalized_product', catalog.getUniqueValue());
+            installationGr.update();
+            return true;
+        }
+
+        // Try fuzzy match on product name alone
+        var catalogFuzzy = new GlideRecord('x_1970512_softwa_0_product_catalog');
+        catalogFuzzy.addQuery('product_name', 'STARTSWITH', discoveredProduct.split(' ')[0]);
+        catalogFuzzy.setLimit(1);
+        catalogFuzzy.query();
+
+        if (catalogFuzzy.next()) {
+            installationGr.setValue('normalization_status', 'normalized');
+            installationGr.setValue('normalized_product', catalogFuzzy.getUniqueValue());
+            installationGr.update();
+            return true;
+        }
+
+        installationGr.setValue('normalization_status', 'match_failed');
+        installationGr.update();
+        return false;
+    },
+
+    normalizeAll: function() {
+        var count = 0;
+        var gr = new GlideRecord('x_1970512_softwa_0_installation');
+        gr.addQuery('normalization_status', 'unnormalized');
+        gr.query();
+        while (gr.next()) {
+            if (this.normalizeInstallation(gr)) {
+                count++;
+            }
+        }
+        gs.info('NormalizationEngine: Normalized ' + count + ' installations.');
+        return count;
+    },
+
+    checkUnlicensedInstallations: function() {
+        var unlicensed = [];
+        var gr = new GlideRecord('x_1970512_softwa_0_installation');
+        gr.addQuery('normalization_status', 'normalized');
+        gr.query();
+        while (gr.next()) {
+            var productId = gr.getValue('normalized_product');
+            var deviceId = gr.getValue('installed_on_device');
+            var userId = gr.getValue('installed_for_user');
+
+            // Check if there's a matching allocation
+            var alloc = new GlideRecord('x_1970512_softwa_0_allocation');
+            alloc.addQuery('entitlement.product', productId);
+            alloc.addQuery('status', 'allocated');
+            if (userId) {
+                alloc.addQuery('assigned_to_user', userId);
+            } else if (deviceId) {
+                alloc.addQuery('assigned_to_device', deviceId);
+            }
+            alloc.setLimit(1);
+            alloc.query();
+
+            if (!alloc.hasNext()) {
+                unlicensed.push(gr.getUniqueValue());
+            }
+        }
+        gs.info('NormalizationEngine: Found ' + unlicensed.length + ' unlicensed installations.');
+        return unlicensed;
+    },
+
+    type: 'NormalizationEngine'
+};
+]]></script>
+  </sys_script_include>
+</record_update>

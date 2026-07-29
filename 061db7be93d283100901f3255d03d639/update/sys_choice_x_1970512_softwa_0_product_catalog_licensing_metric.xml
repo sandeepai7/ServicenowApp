@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="licensing_metric" table="x_1970512_softwa_0_product_catalog">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>605ac27c7ff34a6e985a89b56626785e</sys_id>
+      <name>x_1970512_softwa_0_product_catalog</name>
+      <element>licensing_metric</element>
+      <label>Per User</label>
+      <value>per_user</value>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>9bddb5dd6f1d48628e3f909109f0f173</sys_id>
+      <name>x_1970512_softwa_0_product_catalog</name>
+      <element>licensing_metric</element>
+      <label>Per Device</label>
+      <value>per_device</value>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>b78fa883526d4912af74decbb09eb1ed</sys_id>
+      <name>x_1970512_softwa_0_product_catalog</name>
+      <element>licensing_metric</element>
+      <label>Per Core</label>
+      <value>per_core</value>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>ab2bbd5df4d0444cb907d867d8d69977</sys_id>
+      <name>x_1970512_softwa_0_product_catalog</name>
+      <element>licensing_metric</element>
+      <label>Per Concurrent User</label>
+      <value>per_concurrent_user</value>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>863fa6683904417381d6d02e0b835c87</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <name>x_1970512_softwa_0_product_catalog</name>
+      <element>licensing_metric</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>

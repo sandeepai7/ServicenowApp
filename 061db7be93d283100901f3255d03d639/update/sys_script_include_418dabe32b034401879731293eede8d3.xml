@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <sys_id>418dabe32b034401879731293eede8d3</sys_id>
+    <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+    <sys_update_name>sys_script_include_418dabe32b034401879731293eede8d3</sys_update_name>
+    <access>public</access>
+    <active>true</active>
+    <api_name>x_1970512_softwa_0.SAMLUtils</api_name>
+    <caller_access/>
+    <client_callable>true</client_callable>
+    <description>GlideAjax processor for SAML client-side operations. Provides licensing metric lookup for entitlements.</description>
+    <mobile_callable>false</mobile_callable>
+    <name>SAMLUtils</name>
+    <sandbox_callable>false</sandbox_callable>
+    <script><![CDATA[var SAMLUtils = Class.create();
+SAMLUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getLicensingMetric: function() {
+        var entitlementId = this.getParameter('sysparm_entitlement_id');
+        if (!entitlementId) return '';
+        
+        var ent = new GlideRecord('x_1970512_softwa_0_entitlement');
+        if (ent.get(entitlementId)) {
+            var productId = ent.getValue('product');
+            if (productId) {
+                var prod = new GlideRecord('x_1970512_softwa_0_product_catalog');
+                if (prod.get(productId)) {
+                    return prod.getValue('licensing_metric') || '';
+                }
+            }
+        }
+        return '';
+    },
+    type: 'SAMLUtils'
+});
+]]></script>
+  </sys_script_include>
+</record_update>

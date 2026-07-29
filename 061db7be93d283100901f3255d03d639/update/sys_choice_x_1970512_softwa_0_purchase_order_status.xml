@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="status" table="x_1970512_softwa_0_purchase_order">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>9261c5686a2b435eb447623ec7a06c8c</sys_id>
+      <name>x_1970512_softwa_0_purchase_order</name>
+      <element>status</element>
+      <label>Draft</label>
+      <value>draft</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>3076c107feca407eaf26130ee98f6018</sys_id>
+      <name>x_1970512_softwa_0_purchase_order</name>
+      <element>status</element>
+      <label>Pending Approval</label>
+      <value>pending_approval</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>46bcdb77e287402f81f52da29d4314dc</sys_id>
+      <name>x_1970512_softwa_0_purchase_order</name>
+      <element>status</element>
+      <label>Ordered</label>
+      <value>ordered</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>3f7331bff8384217b920a00ee3b5a61c</sys_id>
+      <name>x_1970512_softwa_0_purchase_order</name>
+      <element>status</element>
+      <label>Received</label>
+      <value>received</value>
+      <sequence>3</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>83d1ebf638be4c85947018941583c5cc</sys_id>
+      <name>x_1970512_softwa_0_purchase_order</name>
+      <element>status</element>
+      <label>Closed</label>
+      <value>closed</value>
+      <sequence>4</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>ec7cd34c837b4f4dbe9b45afa16ce373</sys_id>
+      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
+      <name>x_1970512_softwa_0_purchase_order</name>
+      <element>status</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>
