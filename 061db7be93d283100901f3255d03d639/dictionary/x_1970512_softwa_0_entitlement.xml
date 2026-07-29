@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="adaa18131468473d858d3796ad44d4ab" label="Software Entitlement" name="x_1970512_softwa_0_entitlement" type="collection">
+        <element default="0" label="Allocated Rights" max_length="40" name="allocated_rights" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element choice="1" default="draft" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Expired" sequence="3" value="expired"/>
+                <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
+                <element inactive_on_update="false" label="Retired" sequence="4" value="retired"/>
+                <element inactive_on_update="false" label="Expiring" sequence="2" value="expiring"/>
+            </choice>
+        </element>
+        <element label="License Key" max_length="255" name="license_key" type="password2"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element default="0" label="Available Rights" max_length="40" name="available_rights" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="Unit Cost" max_length="40" name="unit_cost" type="currency"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Product" mandatory="true" max_length="32" name="product" reference="x_1970512_softwa_0_product_catalog" type="reference"/>
+        <element label="PO Reference" max_length="32" name="po_reference" reference="x_1970512_softwa_0_purchase_order" type="reference"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Contract" max_length="32" name="contract" reference="ast_contract" type="reference"/>
+        <element label="Purchased Rights" mandatory="true" max_length="40" name="purchased_rights" type="integer"/>
+        <index name="index">
+            <element name="contract"/>
+        </index>
+        <index name="index2">
+            <element name="po_reference"/>
+        </index>
+        <index name="index3">
+            <element name="product"/>
+        </index>
+    </element>
+</database>

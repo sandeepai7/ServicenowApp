@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="8caebaa61ba34f82baa958c9dde22254" label="Software Product Catalog" name="x_1970512_softwa_0_product_catalog" type="collection">
+        <element choice="1" label="Licensing Metric" max_length="40" name="licensing_metric" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Per User" value="per_user"/>
+                <element inactive_on_update="false" label="Per Device" value="per_device"/>
+                <element inactive_on_update="false" label="Per Concurrent User" value="per_concurrent_user"/>
+                <element inactive_on_update="false" label="Per Core" value="per_core"/>
+            </choice>
+        </element>
+        <element label="Publisher" max_length="32" name="publisher" reference="core_company" type="reference"/>
+        <element choice="1" label="Platform" max_length="40" name="platform" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SaaS" value="saas"/>
+                <element inactive_on_update="false" label="Mac" value="mac"/>
+                <element inactive_on_update="false" label="Cloud" value="cloud"/>
+                <element inactive_on_update="false" label="Windows" value="windows"/>
+                <element inactive_on_update="false" label="Linux" value="linux"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Product Name" mandatory="true" max_length="200" name="product_name" type="string"/>
+        <element default="true" label="Is Approved Software" max_length="40" name="is_approved_software" type="boolean"/>
+        <element label="Edition" max_length="100" name="edition" type="string"/>
+        <index name="index">
+            <element name="publisher"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="57a0549a87634a138fd8af826f829671" label="Discovered Installation" name="x_1970512_softwa_0_installation" type="collection">
+        <element label="Installed For User" max_length="32" name="installed_for_user" reference="sys_user" type="reference"/>
+        <element label="Discovered Product" max_length="200" name="discovered_product" type="string"/>
+        <element label="Installed On Device" max_length="32" name="installed_on_device" reference="cmdb_ci_hardware" type="reference"/>
+        <element label="Normalized Product" max_length="32" name="normalized_product" reference="x_1970512_softwa_0_product_catalog" type="reference"/>
+        <element choice="1" label="Discovery Source" max_length="40" name="discovery_source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SCCM" sequence="1" value="sccm"/>
+                <element inactive_on_update="false" label="ServiceNow Discovery" sequence="0" value="servicenow_discovery"/>
+                <element inactive_on_update="false" label="Agent" sequence="4" value="agent"/>
+                <element inactive_on_update="false" label="Manual" sequence="3" value="manual"/>
+                <element inactive_on_update="false" label="Jamf" sequence="2" value="jamf"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Discovered Publisher" max_length="200" name="discovered_publisher" type="string"/>
+        <element choice="1" default="unnormalized" label="Normalization Status" max_length="40" name="normalization_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Match Failed" sequence="2" value="match_failed"/>
+                <element inactive_on_update="false" label="Normalized" sequence="1" value="normalized"/>
+                <element inactive_on_update="false" label="Unnormalized" sequence="0" value="unnormalized"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="installed_for_user"/>
+        </index>
+        <index name="index2">
+            <element name="installed_on_device"/>
+        </index>
+        <index name="index3">
+            <element name="normalized_product"/>
+        </index>
+    </element>
+</database>

@@ -1,107 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-  <sys_ui_section caption="General" section_id="ed1bd0787c4a4cbc9f453dd49aef6aec" sys_domain="global" table="x_1970512_softwa_0_usage" view="">
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>.begin_split</element>
-      <position>0</position>
-      <sys_id>e28630c30f8444f6be5d5fed87268274</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type>.begin_split</type>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>number</element>
-      <position>1</position>
-      <sys_id>7fa3734ce7254a309a9131644740cdfc</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type/>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>allocation</element>
-      <position>2</position>
-      <sys_id>de8f438a1d5e41699b28ba2764eb392e</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type/>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>installation</element>
-      <position>3</position>
-      <sys_id>6b58fd6d4af14942ae47e3a7e61ac774</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type/>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>last_used_date</element>
-      <position>4</position>
-      <sys_id>2a9c9c58e4964d9bb6aadc68d244a2f2</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type/>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>.split</element>
-      <position>5</position>
-      <sys_id>ed7506800747438598d75a3ba81d0a2b</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type>.split</type>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>total_hours_used</element>
-      <position>6</position>
-      <sys_id>c4f040b0d09d47c6a00a5f15d6f906bb</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type/>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>days_inactive</element>
-      <position>7</position>
-      <sys_id>4ae405321bb84dd1a11048c6b88087ba</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type/>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>reclamation_state</element>
-      <position>8</position>
-      <sys_id>2dd3d491cf8948a2ad5511f04fe740a1</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type/>
-    </sys_ui_element>
-    <sys_ui_element action="INSERT_OR_UPDATE">
-      <element>.end_split</element>
-      <position>9</position>
-      <sys_id>982d02c8ed4643269b13aca845712faf</sys_id>
-      <sys_ui_formatter/>
-      <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
-      <sys_user/>
-      <type>.end_split</type>
-    </sys_ui_element>
-    <sys_ui_section action="INSERT_OR_UPDATE">
-      <caption>General</caption>
-      <header>false</header>
-      <name>x_1970512_softwa_0_usage</name>
-      <roles/>
-      <sys_domain>global</sys_domain>
-      <sys_id>ed1bd0787c4a4cbc9f453dd49aef6aec</sys_id>
-      <sys_scope display_value="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_scope>
-      <sys_user/>
-      <title>false</title>
-      <view_name/>
-      <view display_value="Default view" name="NULL">Default view</view>
+    <sys_ui_section caption="General" section_id="ed1bd0787c4a4cbc9f453dd49aef6aec" sys_domain="global" table="x_1970512_softwa_0_usage" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>e28630c30f8444f6be5d5fed87268274</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>7fa3734ce7254a309a9131644740cdfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>allocation</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>de8f438a1d5e41699b28ba2764eb392e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>installation</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>6b58fd6d4af14942ae47e3a7e61ac774</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_used_date</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>2a9c9c58e4964d9bb6aadc68d244a2f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>ed7506800747438598d75a3ba81d0a2b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_hours_used</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>c4f040b0d09d47c6a00a5f15d6f906bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>days_inactive</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>4ae405321bb84dd1a11048c6b88087ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reclamation_state</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>2dd3d491cf8948a2ad5511f04fe740a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_id>982d02c8ed4643269b13aca845712faf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="General" display_value="General" name="x_1970512_softwa_0_usage" sys_domain="global" view="Default view">ed1bd0787c4a4cbc9f453dd49aef6aec</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>General</caption>
+            <header>false</header>
+            <name>x_1970512_softwa_0_usage</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-29 17:16:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed1bd0787c4a4cbc9f453dd49aef6aec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1970512_softwa_0_usage</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Software Asset Management Lifecycle" source="x_1970512_softwa_0">061db7be93d283100901f3255d03d639</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Software Asset Management Lifecycle">061db7be93d283100901f3255d03d639</sys_scope>
+            <sys_update_name>sys_ui_section_ed1bd0787c4a4cbc9f453dd49aef6aec</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-29 17:16:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
     </sys_ui_section>
-  </sys_ui_section>
 </record_update>

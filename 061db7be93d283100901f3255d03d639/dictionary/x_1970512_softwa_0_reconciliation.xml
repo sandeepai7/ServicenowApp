@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="a62a56e0f80945e999d3259d25390cf0" label="Reconciliation Result" name="x_1970512_softwa_0_reconciliation" type="collection">
+        <element label="Total Entitlements" max_length="40" name="total_entitlements" type="integer"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Reconciliation Date" max_length="40" name="reconciliation_date" type="glide_date_time"/>
+        <element label="Financial Exposure" max_length="40" name="financial_exposure" type="currency"/>
+        <element choice="1" label="Compliance Status" max_length="40" name="compliance_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Compliant" sequence="0" value="compliant"/>
+                <element inactive_on_update="false" label="Under-licensed/Non-Compliant" sequence="2" value="under_licensed"/>
+                <element inactive_on_update="false" label="Over-licensed" sequence="1" value="over_licensed"/>
+            </choice>
+        </element>
+        <element label="Total Installations" max_length="40" name="total_installations" type="integer"/>
+        <element label="Product" mandatory="true" max_length="32" name="product" reference="x_1970512_softwa_0_product_catalog" type="reference"/>
+        <index name="index">
+            <element name="product"/>
+        </index>
+    </element>
+</database>

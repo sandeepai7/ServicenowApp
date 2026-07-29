@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="002ce883434d45059f842d6edf75cee1" label="Software Purchase Order" name="x_1970512_softwa_0_purchase_order" type="collection">
+        <element label="PO Number" max_length="80" name="po_number" type="string"/>
+        <element label="Cost Center" max_length="32" name="cost_center" reference="cmn_cost_center" type="reference"/>
+        <element choice="1" default="draft" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Approval" sequence="1" value="pending_approval"/>
+                <element inactive_on_update="false" label="Received" sequence="3" value="received"/>
+                <element inactive_on_update="false" label="Ordered" sequence="2" value="ordered"/>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="closed"/>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Total Cost" max_length="40" name="total_cost" type="currency"/>
+        <element label="Vendor" max_length="32" name="vendor" reference="core_company" type="reference"/>
+        <index name="index">
+            <element name="cost_center"/>
+        </index>
+        <index name="index2">
+            <element name="vendor"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="07d797444e9b4baaae49a4287c84c564" label="License Allocation" name="x_1970512_softwa_0_allocation" type="collection">
+        <element label="Allocated Date" max_length="40" name="allocated_date" type="glide_date_time"/>
+        <element label="Entitlement" mandatory="true" max_length="32" name="entitlement" reference="x_1970512_softwa_0_entitlement" type="reference"/>
+        <element choice="1" default="allocated" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Revocation" sequence="1" value="pending_revocation"/>
+                <element inactive_on_update="false" label="Revoked" sequence="2" value="revoked"/>
+                <element inactive_on_update="false" label="Allocated" sequence="0" value="allocated"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Assigned To Device" max_length="32" name="assigned_to_device" reference="cmdb_ci_hardware" type="reference"/>
+        <element label="Assigned To User" max_length="32" name="assigned_to_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="assigned_to_device"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to_user"/>
+        </index>
+        <index name="index3">
+            <element name="entitlement"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="d5db7e2a83ec4726901e4fb5647ea8ce" label="Usage Tracker" name="x_1970512_softwa_0_usage" type="collection">
+        <element label="Installation" max_length="32" name="installation" reference="x_1970512_softwa_0_installation" type="reference"/>
+        <element default="0" label="Days Inactive" max_length="40" name="days_inactive" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="Allocation" max_length="32" name="allocation" reference="x_1970512_softwa_0_allocation" type="reference"/>
+        <element choice="1" default="active" label="Reclamation State" max_length="40" name="reclamation_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="User Contacted" sequence="2" value="user_contacted"/>
+                <element inactive_on_update="false" label="Reclaimed" sequence="4" value="reclaimed"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Pending Revocation" sequence="3" value="pending_revocation"/>
+                <element inactive_on_update="false" label="Exception Granted" sequence="5" value="exception_granted"/>
+                <element inactive_on_update="false" label="Flagged Inactive" sequence="1" value="flagged_inactive"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Total Hours Used" max_length="20" name="total_hours_used" type="decimal"/>
+        <element label="Last Used Date" max_length="40" name="last_used_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="allocation"/>
+        </index>
+        <index name="index2">
+            <element name="installation"/>
+        </index>
+    </element>
+</database>
