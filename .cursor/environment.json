@@ -1,0 +1,5 @@
+{
+  "name": "ServicenowApp",
+  "user": "ubuntu",
+  "install": "npm ci"
+}

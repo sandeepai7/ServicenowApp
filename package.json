@@ -1,0 +1,19 @@
+{
+    "name": "servicenow-app",
+    "version": "1.0.0",
+    "description": "Comprehensive application managing the end-to-end software lifecycle across 6 phases: Planning & Request, Procurement & Receiving, Allocation & Entitlement, Discovery & Normalization, Usage & Reclamation, and Audit & Retirement.",
+    "license": "UNLICENSED",
+    "imports": {
+        "#now:*": "./@types/servicenow/fluent/*/index.js"
+    },
+    "scripts": {
+        "build": "now-sdk build",
+        "deploy": "now-sdk install",
+        "transform": "now-sdk transform",
+        "types": "now-sdk dependencies"
+    },
+    "devDependencies": {
+        "@servicenow/sdk": "4.10.1",
+        "@servicenow/glide": "27.0.5"
+    }
+}
