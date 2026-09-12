@@ -1,0 +1,6 @@
+{
+  "scope": "x_1970512_software",
+  "scopeId": "66261ee50fbe4051bcbaa82d4d73cb14",
+  "name": "softwareAssets",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
